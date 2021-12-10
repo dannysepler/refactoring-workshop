@@ -4,9 +4,11 @@
 
 Run `pip install astpretty` before using this section!
 
+Also, while this section is written about python, the concepts are true of most code formatters in other languages. All languages have some sort of abstract syntax tree.
+
 ## Introduction
 
-You may be wondering how a tool like `black` or `pyupgrade` works. It's much more complicated than the simple refactors we've done with `sed`. It also seems to contain some knowledge of the python language, since it know what's in a comment, etc!
+You may be wondering how a tool like `black` or `pyupgrade` works. It's much more complicated than the simple refactors we've done with `sed`. It also seems to contain some knowledge of the python language, since it knows what's in a comment, etc!
 
 The answer is that these tools know about Python's "Abstract Syntax Tree", or the grammar (syntax) of a given python module, parsable via a tree.
 
