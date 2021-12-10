@@ -1,5 +1,7 @@
 # `sed`
 
+## Introduction
+
 `sed` is a find-and-replace tool to help you refactor broad swaths of code.
 
 `sed` stands for stream editor. Let me first say, `sed` is VERY complicated and I'll only be giving a shallow understanding of it. A much more comprehensive tutorial [like this one](https://www.grymoire.com/Unix/Sed.html) would be much better for eager learners.
@@ -55,4 +57,4 @@ Let's go back to Harry Potter. I always thought Draco would have been a better m
 sed -i '' -e 's/Harry/Draco/g' ../1_grep/ex1_harry.txt
 ```
 
-How fast was that!
+How fast was that? This is especially powerful in a large file with unknown quantities of thigns to rename!

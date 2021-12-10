@@ -1,5 +1,7 @@
 # `grep`
 
+## Introduction
+
 `grep` is a powerful tool to find things in your code.
 
 `grep` finds all lines that match a given regular expresion and streams them to your output.
