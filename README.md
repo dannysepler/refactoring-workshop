@@ -1,6 +1,6 @@
 # Refactoring Workshop
 
-The purpose of this workshop is to teach tools
+This workshop teaches tools useful for broad rewrites of code.
 
 ## Section 1: Command line tools
 
@@ -15,4 +15,3 @@ The purpose of this workshop is to teach tools
 ## Section 3: Creating your own (Python) refactoring tool
 
 5. The Python AST
-6. 
