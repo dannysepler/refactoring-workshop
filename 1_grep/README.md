@@ -53,7 +53,10 @@ But now you're missing a few results, such as `owls`. This is where grep begins 
 grep -E ' owl(s?) ' ex1_harry.txt
 ```
 
-Pop quiz: one hard thing to search for is `owl-free`. How can we do that?
+*Pop quiz:*
+
+1. Using spaces to delineate a word (while simple) has a flaw. What is it?
+2. We missed one reference: `owl-free`. How can we include that?
 
 ## Are there good `grep` tools out there?
 
