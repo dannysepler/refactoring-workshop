@@ -62,7 +62,8 @@ IDE doesn't handle for you.
 ## Putting it all together
 
 At this point, you may be thinking:
-_Danny, you're so cool and knowledgeable! How do you know all this? Did you ever write a refactoring tool? What's your phone number?_
+
+> Danny, you're so cool and knowledgeable! How do you know all this? Did you ever write a refactoring tool? What's your phone number?
 
 Okay, maybe you didn't think _all_ of that. But yes! If you're curious
 what a completed AST refactoring tool may look like, you can look at my
