@@ -57,4 +57,4 @@ Let's go back to Harry Potter. I always thought Draco would have been a better m
 sed -i '' -e 's/Harry/Draco/g' ../1_grep/ex1_harry.txt
 ```
 
-How fast was that? This is especially powerful in a large file with unknown quantities of thigns to rename!
+How fast was that? This is especially powerful in a large file with unknown quantities of things to rename!

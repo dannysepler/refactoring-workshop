@@ -33,7 +33,7 @@ Here we're saying, find me all the lines that match "Harry", then remove all the
 
 ## Using regex in `grep`
 
-Owl are a big theme in Harry Potter 🦉 -- let's find some!
+Owls are a big theme in Harry Potter 🦉 -- let's find some!
 
 ```bash
 grep owl ex1_harry.txt

@@ -2,16 +2,28 @@
 
 This workshop teaches tools useful for broad rewrites of code.
 
-## Section 1: Command line tools
+## Requirements
+
+I use a Mac, so some of these commands may not work for Windows. If you
+find such a command, please leave a github issue on this repo with the
+equivalent command and I'll add it in!
+
+A working installation of python >=3.6 will be helpful for section four.
+As well, a working install of python would be helpful for that section.
+
+## Table of contents
+
+### Command line tools
 
 1. Using `grep` to search for things
 2. Using `sed` to perform simple find-and-replaces
 
-## Section 2: Plug-and-play pre-commit hooks
+### Pre-commit hooks
 
-3. The `pygrep` pre-commit hook
-4. Python pre-commit hooks everyone should use
+3. Introduction to `pre-commit`
+  - Hooks to consider in your code
 
-## Section 3: Creating your own (Python) refactoring tool
+### Creating your own refactoring tool
 
-5. The Python AST
+4. Abstract Syntax Trees
+  - How to use them in refactors

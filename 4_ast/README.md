@@ -23,7 +23,7 @@ What is being printed out here is what Python sees when it looks at the given pi
 
 An `ast` is useful in that it parses the code for you, in a place that you can actually work with it.
 
-## Viewing only imports
+## Searching for a certain element
 
 What if you were wondering, okay what are all the things imported in my file(s)?
 
@@ -34,3 +34,7 @@ python ex2_ast_visit_imports.py ex2_lots_of_imports.py
 ```
 
 If you look at the code, you may notice that ASTs use the "Visitor" design pattern. By subclassing the "NodeVisitor" class and specify what sorts of things to visit, you can define your own behavior upon visiting that sort of node.
+
+## Using the AST to inform your refactoring
+
+....
