@@ -2,7 +2,6 @@ import argparse
 import ast
 from collections import Counter
 from pathlib import Path
-from typing import Union
 
 
 class ImportVisitor(ast.NodeVisitor):
@@ -21,7 +20,7 @@ def visit_file(file: Path, *, visitor: ImportVisitor) -> None:
     visitor.visit(ast.parse(contents))
 
 
-def visit_path(file_or_dir: Union[str, Path], *, visitor: ImportVisitor) -> None:
+def visit_path(file_or_dir: str, *, visitor: ImportVisitor) -> None:
     path = Path(file_or_dir)
     if path.is_dir():
         for p in path.glob("**/*.py"):

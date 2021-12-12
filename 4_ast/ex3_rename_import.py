@@ -1,7 +1,6 @@
 import argparse
 import ast
 from pathlib import Path
-from typing import Union
 
 
 class ImportVisitor(ast.NodeVisitor):
@@ -38,7 +37,7 @@ def visit_file(file: Path, *, before: str, after: str) -> None:
     print(f"Rewrote {len(visitor.locations)} occurrence(s) in {file}")
 
 
-def visit_path(file_or_dir: Union[str, Path], *, before: str, after: str) -> None:
+def visit_path(file_or_dir: str, *, before: str, after: str) -> None:
     path = Path(file_or_dir)
     if path.is_dir():
         for p in path.glob("**/*.py"):
