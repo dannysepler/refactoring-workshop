@@ -23,14 +23,18 @@ What is being printed out here is what Python sees when it looks at the given pi
 
 An `ast` is useful in that it parses the code for you, in a place that you can actually work with it.
 
-## Searching for a certain element
+## Analyzing your code
 
-What if you were wondering, okay what are all the things imported in my file(s)?
+What if you were wondering, okay what are the most common things imported in my code?
 
 An AST can help you answer this!
 
 ```bash
-python ex2_ast_visit_imports.py ex2_lots_of_imports.py
+# analyze a file
+python ex2_import_counter.py ex2_lots_of_imports.py
+
+# or a whole folder
+python ex2_import_counter.py ~/path/to/my/code
 ```
 
 If you look at the code, you may notice that ASTs use the "Visitor" design pattern.
@@ -44,7 +48,7 @@ rewrite every occurrence of this import, by using our knowledge of the AST
 to reduce false positives
 
 ```bash
-python ex3_rename_imports.py ex2_lots_of_imports.py --before sys --after banana
+python ex3_rename_import.py ex2_lots_of_imports.py --before sys --after banana
 ```
 
 / Maybe your IDE does this already! If so, that's awesome, use that. But keep
