@@ -8,8 +8,8 @@ I use a Mac, so some of these commands may not work for Windows. If you
 find such a command, please leave a github issue on this repo with the
 equivalent command and I'll add it in!
 
-A working installation of python >=3.6 will be helpful for section four.
-As well, a working install of python would be helpful for that section.
+A working installation of python >=3.6 and some knowledge of python will be
+helpful for section four.
 
 ## Table of contents
 

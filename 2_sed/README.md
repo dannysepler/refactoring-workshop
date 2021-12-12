@@ -47,6 +47,8 @@ sed -i '' -e '/^from __future__/d' ex2_legacy_imports.py
 
 Here, rather than using a substitute command, we're using a `/d` delete command, and matching all lines that start with (`^`) the string `from __future__`
 
+Pop quiz: Can you remove all the page numbers from the Harry Potter file?
+
 ## A bulk rename
 
 This is all well and good, but it's hard to appreciate how powerful `sed` is in these small files.
@@ -58,3 +60,19 @@ sed -i '' -e 's/Harry/Draco/g' ../1_grep/ex1_harry.txt
 ```
 
 How fast was that? This is especially powerful in a large file with unknown quantities of things to rename!
+
+## `sed` is complicated. That's okay!
+
+When using `sed` it can be overwhelming how many options are available. The linked
+tutorial is [huuuuuge](https://www.grymoire.com/Unix/Sed.html)! Don't let this
+overwhelm you. Nobody knows all of `sed`. (And if someone does, ... ew.)
+
+The important thing with `sed` is realizing that you're doing something manual over
+and over, where a command can do it for you.
+
+If you're doing any of the following, I hope a red flag pops up!
+
+- renaming a variable across a folder
+- changing a function call
+- removing a line that matches a given pattern
+- upgrading syntax when bumping some dependency
