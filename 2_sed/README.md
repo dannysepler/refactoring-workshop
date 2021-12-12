@@ -47,7 +47,7 @@ sed -i '' -e '/^from __future__/d' ex2_legacy_imports.py
 
 Here, rather than using a substitute command, we're using a `/d` delete command, and matching all lines that start with (`^`) the string `from __future__`
 
-*Pop quiz:*
+**Pop quiz:**
 
 1. How might we remove the page numbers from the Harry Potter file?
 

@@ -55,7 +55,7 @@ python ex3_rename_import.py ex2_lots_of_imports.py --before sys --after banana
 this in mind, since maybe one day you will have some desired refactor that your
 IDE doesn't handle for you.
 
-*Pop quiz:*
+**Pop quiz:**
 
 1. If you read the code, how I handle the replacement is a little hacky. Why's that?
 
