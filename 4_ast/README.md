@@ -53,7 +53,7 @@ IDE doesn't handle for you.
 
 *Pop quiz:*
 
-1. If you read the code, how I handle the `before` argument is pretty hacky. Why's that?
+1. If you read the code, how I handle the replacement is a little hacky. Why's that?
 
 ## Putting it all together
 
