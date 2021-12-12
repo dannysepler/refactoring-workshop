@@ -68,11 +68,9 @@ tutorial is [huuuuuge](https://www.grymoire.com/Unix/Sed.html)! Don't let this
 overwhelm you. Nobody knows all of `sed`. (And if someone does, ... ew.)
 
 The important thing with `sed` is realizing that you're doing something manual over
-and over, where a command can do it for you.
+and over, where a command can do it for you. Such as...
 
-If you're doing any of the following, I hope a red flag pops up!
-
-- renaming a variable across a folder
+- renaming a variable
 - changing a function call
 - removing a line that matches a given pattern
-- upgrading syntax when bumping some dependency
+- upgrading syntax when bumping dependencies

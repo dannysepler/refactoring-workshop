@@ -21,9 +21,9 @@ helpful for section four.
 ### Pre-commit hooks
 
 3. Introduction to `pre-commit`
-  - Hooks to consider in your code
+    - Hooks to consider in your code
 
 ### Creating your own refactoring tool
 
 4. Abstract Syntax Trees
-  - How to use them in refactors
+    - How to use them in refactors
