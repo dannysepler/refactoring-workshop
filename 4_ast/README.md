@@ -48,7 +48,7 @@ rewrite every occurrence of this import, by using our knowledge of the AST
 to reduce false positives
 
 ```bash
-python ex3_rename_import.py ex2_lots_of_imports.py --before sys --after banana
+python ex3_rename_import.py ex2_lots_of_imports.py --before f --after banana
 ```
 
 / Maybe your IDE does this already! If so, that's awesome, use that. But keep
