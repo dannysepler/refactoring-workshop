@@ -8,26 +8,25 @@ Also, while this section is written about python, the concepts are true of most 
 
 ## Introduction
 
-You may be wondering how a tool like `black` or `pyupgrade` works. It's much more complicated than the simple refactors we've done with `sed`. It also seems to contain some knowledge of the python language, since it knows what's in a comment, etc!
+You may be wondering how a tool like `black` or `prettier` works. It's much more complicated than the simple refactors we've done with `sed`. It also seems to contain some knowledge of the python language? How is that?
 
-The answer is that these tools know about Python's "Abstract Syntax Tree", or the grammar (syntax) of a given python module, parsable via a tree.
+The answer is that these tools know about Python's "Abstract Syntax Tree", or the
+language's grammar / syntax.
 
 ## Viewing a file's AST
-
 
 ```bash
 python ex1_print_ast.py ex1_simple_file.py
 ```
 
-What is being printed out here is what Python sees when it looks at the given piece of code!
-
-An `ast` is useful in that it parses the code for you, in a place that you can actually work with it.
+This prints out what Python sees when it looks at your file! You can use the AST
+to draw conclusions from your code, or to make sweeping changes.
 
 ## Analyzing your code
 
-What if you were wondering, okay what are the most common things imported in my code?
+Let's say you're wondering: what are the most common modules my code imports?
 
-An AST can help you answer this!
+An AST can answer this!
 
 ```bash
 # analyze a file
@@ -37,23 +36,22 @@ python ex2_import_counter.py ex2_lots_of_imports.py
 python ex2_import_counter.py ~/path/to/my/code
 ```
 
-If you look at the code, you may notice that ASTs use the "Visitor" design pattern.
-By subclassing the "NodeVisitor" class and specify what sorts of things to visit,
-you can define your own behavior upon visiting that sort of node.
+You may notice that ASTs use the "visitor" design pattern. By subclassing the
+`ast.NodeVisitor` class, you can define your own behavior for visiting each element.
 
 ## Using the AST to inform your refactoring
 
-Continuing the above example, let's say some import changed names. We can
-rewrite every occurrence of this import, by using our knowledge of the AST
-to reduce false positives
+Let's say some import changed names. Using find-and-replace via `sed` or a
+text editor may be overly sensitive, resulting in false positives. The AST
+can help!
 
 ```bash
 python ex3_rename_import.py ex2_lots_of_imports.py --before f --after banana
 ```
 
 / Maybe your IDE does this already! If so, that's awesome, use that. But keep
-this in mind, since maybe one day you will have some desired refactor that your
-IDE doesn't handle for you.
+ASTs in mind, since one day you will need some refactor that your IDE doesn't
+handle for you.
 
 **Pop quiz:**
 
