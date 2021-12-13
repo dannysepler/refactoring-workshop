@@ -13,7 +13,11 @@ Let's take a simple example, `ex1_func.py`. We have this lovely little file, but
 Luckily with sed, we can rename all mentions of koalas to kangaroos. Let's give it a shot.
 
 ```bash
+# mac
 sed -i '' -e 's/koala/kangaroo/g' ex1_func.py
+
+# windows
+sed -i -e 's/koala/kangaroo/g' ex1_func.py
 ```
 
 That was easy!
@@ -25,14 +29,23 @@ The `s` part means substitute, then we have a few delimiters, then the `g` flag 
 The delimiters (`/`) are arbitrary. The following all works:
 
 ```bash
+# mac
 sed -i '' -e 's,koala,kangaroo,g' ex1_func.py
 sed -i '' -e 's*koala*kangaroo*g' ex1_func.py
+
+# windows
+sed -i -e 's,koala,kangaroo,g' ex1_func.py
+sed -i -e 's*koala*kangaroo*g' ex1_func.py
 ```
 
 Also note that `sed` uses regex to do its matching, so this works as well!
 
 ```bash
+# mac
 sed -i '' -e 's/koa.a/kangaroo/g' ex1_func.py
+
+# windows
+sed -i -e 's/koa.a/kangaroo/g' ex1_func.py
 ```
 
 ## Using `sed` to delete lines
@@ -42,7 +55,11 @@ Let's take a more concrete example from python. In py2, there were lines that we
 If you look at `ex2_legacy_imports.py`, you may notice that the first three lines are no longer necessary in a py3 context. Let's remove 'em.
 
 ```bash
+# mac
 sed -i '' -e '/^from __future__/d' ex2_legacy_imports.py
+
+# windows
+sed -i -e '/^from __future__/d' ex2_legacy_imports.py
 ```
 
 Here, rather than using a substitute command, we're using a `/d` delete command, and matching all lines that start with (`^`) the string `from __future__`
@@ -58,7 +75,11 @@ This is all well and good, but it's hard to appreciate how powerful `sed` is in 
 Let's go back to Harry Potter. I always thought Draco would have been a better main character than Harry, don't you think?
 
 ```bash
+# mac
 sed -i '' -e 's/Harry/Draco/g' ../1_grep/ex1_harry.txt
+
+# windows
+sed -i -e 's/Harry/Draco/g' ../1_grep/ex1_harry.txt
 ```
 
 How fast was that? This is especially powerful in a large file with unknown quantities of things to rename!
