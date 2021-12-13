@@ -8,22 +8,22 @@
 
 There's not much code in this section. This is just a place for me to share my favorite `pre-commit` hooks! All these are great
 
-1. [pygrep](https://pre-commit.com/#pygrep) (language-agnostic)
-    - fail the commit if a certain string / pattern is found
+1. fail a commit if a string is found
+    - [pygrep](https://pre-commit.com/#pygrep) (language-agnostic)
         - comes bundled with pre-commit
-    - there's also a [pygrep-hook](https://github.com/pre-commit/pygrep-hooks) repo with examples to borrow
-2. opinionated code formatters
+    - see also: [pygrep-hooks](https://github.com/pre-commit/pygrep-hooks) a set of pygrep hooks maintained by pre-commit
+2. code formatters
     - [black](https://github.com/psf/black) (python)
     - [Prettier](https://prettier.io/) (javascript / typescript)
 3. remove old syntax
     - [pyupgrade](https://github.com/asottile/pyupgrade/) (python)
     - [codemods](https://github.com/reactjs/react-codemod/) (react)
         - codemods are not available via pre-commit, but excellent nonetheless
-4. sort your imports
+4. import sorting
     - [isort](https://github.com/PyCQA/isort) (python)
     - alternatively, [reorder_python_imports](https://github.com/asottile/reorder_python_imports) (python)
-5. [mypy](https://github.com/python/mypy/) (python)
-    - enforce your type checking
+5. type checking
+    - [mypy](https://github.com/python/mypy/) (python)
 
 ## How to set up
 
