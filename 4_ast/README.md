@@ -8,7 +8,7 @@ Also, while this section is written about python, the concepts are true of most 
 
 ## Introduction
 
-You may be wondering how a tool like `black` or `prettier` works. It's much more complicated than the simple refactors we've done with `sed`. It also seems to contain some knowledge of the python language? How is that?
+You may be wondering how a tool like `black` or `prettier` works. It's much more complicated than the simple refactors we've done with `sed`. It also seems to contain some knowledge of the python language. How is that?
 
 The answer is that these tools know about Python's "Abstract Syntax Tree", or the
 language's grammar / syntax.
