@@ -6,23 +6,23 @@
 
 ## What should I use?
 
-There's not much code in this section. This is just a place for me to share my favorite python `pre-commit` hooks! All these are great
+There's not much code in this section. This is just a place for me to share my favorite `pre-commit` hooks! All these are great
 
-1. [pygrep](https://pre-commit.com/#pygrep)
-    - search for any regex in your code
+1. [pygrep](https://pre-commit.com/#pygrep) (language-agnostic)
+    - fail the commit if a certain string / pattern is found
         - comes bundled with pre-commit
-    - there's also a [pygrep-hook](https://github.com/pre-commit/pygrep-hooks) repo with free pygreps to borrow
+    - there's also a [pygrep-hook](https://github.com/pre-commit/pygrep-hooks) repo with examples to borrow
 2. opinionated code formatters
-    - [Python black](https://github.com/psf/black)
-    - [Prettier](https://prettier.io/)
+    - [black](https://github.com/psf/black) (python)
+    - [Prettier](https://prettier.io/) (javascript / typescript)
 3. remove old syntax
-    - [pyupgrade](https://github.com/asottile/pyupgrade/)
-    - [react codemods](https://github.com/reactjs/react-codemod/)
-        - not available via pre-commit, but excellent nonetheless
+    - [pyupgrade](https://github.com/asottile/pyupgrade/) (python)
+    - [codemods](https://github.com/reactjs/react-codemod/) (react)
+        - codemods are not available via pre-commit, but excellent nonetheless
 4. sort your imports
-    - [isort](https://github.com/PyCQA/isort)
-    - alternatively, [reorder_python_imports](https://github.com/asottile/reorder_python_imports)
-5. [mypy](https://github.com/python/mypy/)
+    - [isort](https://github.com/PyCQA/isort) (python)
+    - alternatively, [reorder_python_imports](https://github.com/asottile/reorder_python_imports) (python)
+5. [mypy](https://github.com/python/mypy/) (python)
     - enforce your type checking
 
 ## How to set up
@@ -36,24 +36,9 @@ repos:
     hooks:
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
--   repo: https://github.com/asottile/pyupgrade
-    rev: v2.26.0
-    hooks:
-    -   id: pyupgrade
-        # pyupgrade works best if you give a minimum python version
-        args: [--py36-plus]
--   repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v0.910
-    hooks:
-    -   id: mypy
-        # it can be useful to not type-check your tests
-        exclude: ^tests/
--   repo: https://github.com/pycqa/isort
-    rev: 5.9.3
-    hooks:
-      - id: isort
-        name: isort
 ```
+
+Then run `pre-commit install` and you're done!
 
 ## Useful commands
 
