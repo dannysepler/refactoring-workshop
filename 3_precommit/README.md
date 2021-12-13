@@ -11,7 +11,7 @@ There's not much code in this section. This is just a place for me to share my f
 1. fail a commit if a string is found
     - [pygrep](https://pre-commit.com/#pygrep) (language-agnostic)
         - comes bundled with pre-commit
-    - see also: [pygrep-hooks](https://github.com/pre-commit/pygrep-hooks) a set of pygrep hooks maintained by pre-commit
+    - see also [pygrep-hooks](https://github.com/pre-commit/pygrep-hooks): a set of pygrep hooks maintained by pre-commit
 2. code formatters
     - [black](https://github.com/psf/black) (python)
     - [Prettier](https://prettier.io/) (javascript / typescript)
