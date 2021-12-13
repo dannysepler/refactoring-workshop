@@ -36,6 +36,10 @@ repos:
     hooks:
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
+-   repo: https://github.com/pycqa/isort
+    rev: 5.9.3
+    hooks:
+      - id: isort
 ```
 
 Then run `pre-commit install` and you're done!
