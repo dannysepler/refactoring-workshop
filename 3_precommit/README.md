@@ -4,9 +4,9 @@
 
 `pre-commit` is a tool that will run checks or formatters on your code during the git commit. `pre-commit` hooks will both refactor your code, and then ensure that old patterns won't creep back in!
 
-## What should I use?
+## What can I use?
 
-There's not much code in this section. This is just a place for me to share my favorite `pre-commit` hooks! All these are great
+There's not much code in this section. This is just a place for me to share my favorite `pre-commit` hooks!
 
 1. fail a commit if a string is found
     - [pygrep](https://pre-commit.com/#pygrep) (language-agnostic)

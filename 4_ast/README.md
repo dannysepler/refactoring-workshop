@@ -8,7 +8,7 @@ Also, while this section is written about python, the concepts are true of most 
 
 ## Introduction
 
-You may be wondering how a tool like `black` or `prettier` works. It's much more complicated than the simple refactors we've done with `sed`. It also seems to contain some knowledge of the python language. How is that?
+You may be wondering how a tool like `black` or `pyupgrade` works. It's much more complicated than the simple refactors we've done with `sed`. It also seems to contain some knowledge of the python language. How is that?
 
 The answer is that these tools know about Python's "Abstract Syntax Tree", or the
 language's grammar / syntax.
@@ -49,8 +49,8 @@ can help!
 python ex3_rename_import.py ex2_lots_of_imports.py --before f --after banana
 ```
 
-/ Maybe your IDE does this already! If so, that's awesome, use that. But keep
-ASTs in mind, since one day you will need some refactor that your IDE doesn't
+Maybe your IDE can do this already. If so, that's awesome, use that! But keep
+ASTs in mind, since one day you will need a refactor that your IDE can't
 handle for you.
 
 **Pop quiz:**
